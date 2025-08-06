@@ -4,8 +4,8 @@ import './App.css'
 // Sample portfolio data for Joe Root
 const portfolioData = {
   user: {
-    name: 'Virat Kohli',
-    email: 'virat.kohli@example.com',
+    name: 'Graham Gooch',
+    email: 'graham.gooch@example.com',
     totalValue: 125750.50,
     totalGain: 8750.50,
     gainPercentage: 7.48
