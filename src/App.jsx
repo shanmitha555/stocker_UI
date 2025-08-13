@@ -8,7 +8,7 @@ const portfolioData = {
     email: 'donald.trump@example.com',
     totalValue: 125750.50,
     totalGain: 8750.50,
-    gainPercentage: 55555555555555555
+    gainPercentage: 7.46%
   },
   stocks: [
     {
