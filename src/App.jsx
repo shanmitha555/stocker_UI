@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
+import StocksPage from './pages/StocksPage.jsx'
 
 // Sample portfolio data for Joe Root
 const portfolioData = {
@@ -8,7 +9,7 @@ const portfolioData = {
     email: 'donald.trump@example.com',
     totalValue: 125750.50,
     totalGain: 8750.50,
-    gainPercentage: 7.46%
+    gainPercentage: 7.46
   },
   stocks: [
     {
@@ -118,7 +119,7 @@ const middleLayerMenus = [
 ]
 
 const bottomLayerMenus = {
-  'Stocks': ['Watch List', 'Portfolio', 'Place Order', 'Order Book', 'Trade Book', 'Funds', 'Reports', 'Demat Holdings'],
+  'Stocks': ['Watch List', 'Portfolio', 'API Stocks', 'Place Order', 'Order Book', 'Trade Book', 'Funds', 'Reports', 'Demat Holdings'],
   'Mutual Funds': ['My Funds', 'Explore', 'SIP', 'Lumpsum', 'Switch', 'Reports'],
   'F & O': ['Positions', 'Orders', 'Trades', 'Margin', 'Reports'],
   'Commodity': ['Positions', 'Orders', 'Trades', 'Reports'],
@@ -451,6 +452,8 @@ function App() {
               </div>
             </div>
           </>
+        ) : selectedMiddleMenu === 'Stocks' && selectedBottomMenu === 'API Stocks' ? (
+          <StocksPage />
         ) : (
           <div className="construction-message">
             <div className="construction-content">
